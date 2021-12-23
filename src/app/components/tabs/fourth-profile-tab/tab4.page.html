@@ -1,7 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="success">
     <ion-title>Профиль</ion-title>
-    <ion-icon (click)="openModalProfileEdit()" slot="end" size="large" name="create-outline" class="ion-padding-end"></ion-icon>
+    <ion-icon
+      (click)="openModalProfileEdit()"
+      slot="end"
+      size="large"
+      name="create-outline"
+      class="ion-padding-end"
+      style="color: #000"
+    ></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -35,12 +42,18 @@
       <ion-list>
         <ion-item routerLink="my-appeals">Мои обращения</ion-item>
         <ion-item routerLink="about-app">О приложении</ion-item>
-        <ion-item button="true" (click)="chooseLanguage()" class="ion-justify-content-between">
+        <ion-item
+          button="true"
+          (click)="chooseLanguage()"
+          class="ion-justify-content-between"
+        >
           <ion-label>Язык</ion-label>
           <ion-badge color="medium">{{ currentLanguage }}</ion-badge>
         </ion-item>
       </ion-list>
-      <ion-button fill="clear" (click)="openModalAuth()">Выйти из приложения</ion-button>
+      <ion-button fill="clear" (click)="openModalAuth()"
+        >Выйти из приложения</ion-button
+      >
     </ion-col>
   </ion-row>
 </ion-content>

@@ -1,6 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="success">
-    <ion-icon class="ion-padding-start" size="large" name="arrow-back-outline" slot="start" *ngIf="!menu" (click)="showItems('menu')"></ion-icon>
+    <ion-icon
+      class="ion-padding-start"
+      size="large"
+      name="arrow-back-outline"
+      slot="start"
+      *ngIf="!menu"
+      (click)="showItems('menu')"
+      style="color: #000"
+    ></ion-icon>
     <ion-buttons slot="start" *ngIf="menu">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -44,7 +52,9 @@
       </ion-item>
       <ion-item routerLink="map">
         <ion-label>
-          <ion-text>Атырауский сельский округ, село Жанаталап, улица №6</ion-text>
+          <ion-text
+            >Атырауский сельский округ, село Жанаталап, улица №6</ion-text
+          >
           <ion-label color="danger">
             <p>Несостоявшийся</p>
           </ion-label>
